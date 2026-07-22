@@ -39,7 +39,7 @@ catching and reporting them is itself part of the validation process.
    drawn from IEC 61850-5 Type 2, the wrong standard. The applicable
    benchmark is **IEEE C37.238-2017, Annex A, Table A.1: ±1 µs**.
 2. **Compliance scope.** The figures this project measures describe
-   **grandmaster time inaccuracy** — a component of the total
+   **grandmaster time inaccuracy**, a component of the total
    time-inaccuracy budget that downstream Category 3/4 end devices check
    against — not a direct end-device Category 3/4 compliance claim on
    its own.
@@ -49,7 +49,7 @@ catching and reporting them is itself part of the validation process.
 The as-built hardware differs from the original proposal in two
 respects: the RTC is the **RV-3028** on the Uputronics GPS/RTC HAT
 (not a standalone DS3231 as originally specified), and the external TCXO
-in the original proposal was cut entirely — the GPS/RTC HAT physically
+in the original proposal was cut entirely, the GPS/RTC HAT physically
 occupies the board space the TCXO needed, and the two are not
 concurrently installable in this configuration. The TCXO was not
 purchased.
@@ -88,7 +88,7 @@ the validity of the steady-state result above.
 * A 139.2-hour uncontrolled unpowered field event implied 19.39 ppm RTC
   drift, roughly 2.4× the 8.05 ppm rate measured under continuous power.
   The leading explanation is supercapacitor voltage-sag on the RTC
-  backup power, based on register-level evidence — **this is a leading
+  backup power, based on register-level evidence, **this is a leading
   hypothesis, not an independently confirmed root cause.**
 * The 64 ms mean reacquisition offset seen in indoor GPS-fallback
   testing is not explained by crystal drift alone; most likely driven by
